@@ -1,0 +1,25 @@
+/* BlackRoad OS Brand System — Road. Pave Tomorrow. */
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --amber: #F5A623;
+  --hot-pink: #FF1D6C;
+  --magenta: #E91E63;
+  --electric-blue: #2979FF;
+  --violet: #9C27B0;
+  --brand-gradient: linear-gradient(135deg, #F5A623 0%, #FF1D6C 38.2%, #9C27B0 61.8%, #2979FF 100%);
+  --phi: 1.618;
+  --space-xs: 8px;
+  --space-sm: 13px;
+  --space-md: 21px;
+  --space-lg: 34px;
+  --space-xl: 55px;
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--black); color: var(--white); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif; line-height: 1.618; -webkit-font-smoothing: antialiased; }
+.brand-gradient { background: var(--brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.brand-btn { background: var(--brand-gradient); color: #fff; border: none; border-radius: 8px; padding: var(--space-sm) var(--space-lg); font-weight: 700; cursor: pointer; transition: opacity 0.2s var(--ease); }
+.brand-btn:hover { opacity: 0.85; }
+nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.85); backdrop-filter: saturate(180%) blur(20px); padding: var(--space-md) var(--space-xl); z-index: 100; }
